@@ -27,7 +27,9 @@ However, you should be aware the creating a 10 meter grid covering the entire wo
 Be aware of the number of cells in your grid as it relates to processing time.</p>
 <p>The limitation on Y value assumes that SRID 3857 is somewhat unusable 
 above 70 degrees north and below 70 degrees south. You can remove this constraint simply 
-by removing the relevant If clauses around line 57 of the script.</p>
+by removing the relevant "If" statements around line 57 of the script.</p>
+<p>To create subsequent grids without dropping existing grid tables, simply be sure
+to change the submitted value for 'output_tbl'</p>
 
 
 
