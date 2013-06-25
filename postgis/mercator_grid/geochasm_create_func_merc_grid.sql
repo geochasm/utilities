@@ -1,7 +1,11 @@
-﻿DROP FUNCTION IF EXISTS gchsm_create_merc_grid(upper_left_start_in geometry(POINT), cell_side_meters_in numeric, numRows_in integer, numCols_in integer, output_tbl_in text);
+﻿--This script is offered under the MIT license at http://opensource.org/licenses/MIT
+--Copyright(c) 2013 Geochasm http://geochasm.com/
+--Test this script in a non-productoin database prior to using; this script may damage existing data
+
+
+DROP FUNCTION IF EXISTS gchsm_create_merc_grid(upper_left_start_in geometry(POINT), cell_side_meters_in numeric, numRows_in integer, numCols_in integer, output_tbl_in text);
 
 CREATE FUNCTION gchsm_create_merc_grid(upper_left_start_in geometry(POINT), cell_side_meters_in numeric, numRows_in integer, numCols_in integer, output_tbl_in text) RETURNS integer AS $$
-
 
 DECLARE
 
@@ -120,4 +124,3 @@ BEGIN
 	
 END;
 $$ LANGUAGE plpgsql;
---COMMENT ON FUNCTION
