@@ -1,6 +1,6 @@
 <strong>PostGIS Mercator Grid Create function</strong>
 
-<p>This PL/pgSQL function can be installed in your database by executing the geochasm_create_func_merc_grid.sql script</p>
+<p>This PL/pgSQL function can be installed in your PostGIS-enabled database by executing the geochasm_create_func_merc_grid.sql script</p>
 
 <p>The resulting function can be called using gchsm_create_merc_grid() with the required 5 parameters.</p>
 
